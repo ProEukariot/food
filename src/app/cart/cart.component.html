@@ -1,0 +1,20 @@
+<div class="total">
+  total: <span>{{ getTotal() | currency }}</span> for
+  <span>{{ getItemsQuantity() }}</span> items
+  <button id="buyBtn">Buy</button>
+</div>
+<ul>
+  <li *ngFor="let cartItem of cart.cartItems">
+    <div class="container">
+      <img [src]="cartItem.item.imageUrl" />
+      <span>{{ cartItem.item.name }}</span>
+      <button (click)="removeItem(cartItem.item.id)">-</button
+      ><span>{{ cartItem.quantity }}</span>
+      <button (click)="addItem(cartItem.item)">+</button>
+      <span>{{ cartItem.quantity * cartItem.item.price | currency }}</span>
+      <button (click)="deleteItem(cartItem.item.id)" class="delete">
+        Delete
+      </button>
+    </div>
+  </li>
+</ul>

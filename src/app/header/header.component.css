@@ -1,0 +1,19 @@
+.logo{
+    font-weight: bold;
+    padding: 1rem;
+    color: red;
+}
+
+.container{
+    padding-inline: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid red;
+}
+
+nav li{
+    display: inline-block;
+    list-style: none;
+    margin-inline: 0.5rem;
+}

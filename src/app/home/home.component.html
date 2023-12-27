@@ -1,0 +1,19 @@
+<app-search></app-search>
+<app-tags [food$]="food$"></app-tags>
+<ul>
+  <li *ngFor="let item of food$ | async" class="item">
+    <a><img [src]="item.imageUrl" [routerLink]="['food', item.id]" /></a>
+    <div class="item-body">
+      <div class="item-header">
+        <h3>{{ item.name }}</h3>
+        <span class="favorite" [class.is]="item.favorite">♥</span>
+      </div>
+      <span class="price">{{ item.price | currency }}</span>
+      <ul class="tags">
+        <li *ngFor="let tag of item.tags" class="tag">
+          <span class="tag">{{ tag }}</span>
+        </li>
+      </ul>
+    </div>
+  </li>
+</ul>

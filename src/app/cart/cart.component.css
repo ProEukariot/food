@@ -1,0 +1,77 @@
+ul {
+  padding-inline: 2rem;
+}
+
+li {
+  display: flex;
+  border: 1px solid red;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1rem;
+  background-color: white;
+  border: 1px solid red;
+  border-radius: 2rem;
+  cursor: pointer;
+  user-select: none;
+  margin-inline: 0.5rem;
+  transition: background-color ease 0.2s;
+}
+
+button:hover {
+  background-color: #f1f1f1;
+}
+
+img {
+  height: 5rem;
+  width: 5rem;
+  display: inline-block;
+  border-radius: 1rem;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+span {
+  font-size: 1.5rem;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+button.delete {
+  margin-left: auto;
+  width: 8rem;
+  transition: all ease 0.2s;
+}
+
+button.delete:hover {
+  color: white;
+  background-color: red;
+}
+
+.total {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
+}
+
+#buyBtn {
+  margin-left: auto;
+  width: 8rem;
+}
+
+.total > span {
+  margin-inline: 0.5rem;
+}

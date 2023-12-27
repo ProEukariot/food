@@ -1,0 +1,12 @@
+<img class="image" [src]="item.imageUrl" />
+<div class="body">
+  <h3>{{ item.name }}</h3>
+  <div class="tags">
+    <span class="tag" *ngFor="let tag of item.tags">{{ tag }}</span>
+  </div>
+  <div class="info">
+    <span class="price">{{ item.price | currency }}</span>
+    <span class="favorite" [class.is]="item.favorite">♥</span>
+  </div>
+  <button (click)="addToCart()">Add To Cart</button>
+</div>

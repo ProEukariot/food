@@ -1,0 +1,6 @@
+<div *ngIf="tags">
+  <a (click)="search('')">all({{ total }})</a>
+  <a (click)="search(tag.name)" *ngFor="let tag of tags"
+    >{{ tag.name }}({{ tag.count }})</a
+  >
+</div>

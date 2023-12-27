@@ -1,0 +1,15 @@
+a {
+  background-color: #f1f1f1;
+  font-size: 1rem;
+  margin-inline-end: 0.25rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  user-select: none;
+  cursor: pointer;
+}
+
+div {
+  display: flex;
+  margin-bottom: 1rem;
+  margin-inline: 0.5rem;
+}
